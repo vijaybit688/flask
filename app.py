@@ -1,9 +1,9 @@
 from flask import Flask, render_template, request
+
 import pickle
 import numpy as np
 
 app = Flask(__name__)
-
 
 @app.route('/')
 def career():
@@ -83,4 +83,4 @@ def result():
       return render_template("testafter.html",final_res=final_res,job_dict=jobs_dict,job0=data1)
       
 if __name__ == '__main__':
-   app.run(debug = True)
+   app.run()
